@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SuperEasy Log Viewer for SAP CPI</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="pure.min.css">
+</head>
+
+<body>
+    <div style="margin-left: auto;margin-right: auto;max-width: 768px;">
+        <div class="header">
+            <h2>SuperEasy Log Viewer for SAP CPI</h2>
+        </div>
+        <form action="/" method="POST" class="pure-form pure-form-aligned">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="tenant_url">CPI tenant URL</label>
+                    <input id="tenant_url" type="text" name="tenant_url">
+                    <span class="pure-form-message-inline">e.g. pxxxx-tmn.hci.eu1.hana.ondemand.com</span>
+
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" name="username">
+                    <span class="pure-form-message-inline">S-user or P-user</span>
+                </div>
+                <div class="pure-control-group">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password">
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="last_n_messages">Show last N messages</label>
+                    <input id="last_n_messages" type="number" name="last_n_messages" value="50">
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="type_select">Select log type</label>
+
+                    <select id="type_select" name="log_type">
+                        <option value="trace" selected>Trace(default)</option>
+                        <option value="http">HTTP access</option>
+                    </select>
+
+                </div>
+
+                <div class="pure-controls">
+
+
+                    <input class="pure-button pure-button-primary" type="submit" value="Show me the logs!" accesskey="s">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

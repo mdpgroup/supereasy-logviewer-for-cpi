@@ -1,0 +1,20 @@
+{
+  "name": "easylog-cpi",
+  "version": "0.1.0",
+  "description": "SuperEasy Log Viewer for SAP Cloud Platform Integration.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medepia/supereasy-logviewer-for-cpi.git"
+  },
+  "bin": {
+    "easylog-cpi": "./bin/index.js"
+  },
+  "author": "medepia",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "opn": "^5.4.0"
+  }
+}
